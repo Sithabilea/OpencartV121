@@ -19,6 +19,13 @@ public class MyAccountPage extends BasePage {
 	WebElement msgHeading;
 	
 	
+	@FindBy(xpath="//input[@placeholder='Search']")
+	WebElement searchBar;
+	
+	@FindBy(xpath="//button[@class='btn btn-default btn-lg']")
+	WebElement searchSubmit;
+	
+	
 	@FindBy(xpath="//a[@class='list-group-item'][normalize-space()='Logout']")  //added in step 6
 	WebElement lnkLogout;
 	
@@ -33,6 +40,16 @@ public class MyAccountPage extends BasePage {
 		{
 			return false;
 		}
+	}
+	
+	public void searchProduct()
+	{
+		searchBar.sendKeys("imac");
+	}
+	
+	public void searchSubmitBtn()
+	{
+		searchSubmit.click();
 	}
 	
 	public void clickLogout() {   //added in step 6
