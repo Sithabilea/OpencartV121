@@ -18,6 +18,13 @@ public class ImacProdPage extends BasePage {
 	@FindBy(xpath="//h1[normalize-space()='iMac']")
 	WebElement prodText;
 	
+	
+	@FindBy(xpath="//button[@id='button-cart']")
+	WebElement addToCartBtn;
+	
+	@FindBy(xpath="//a[normalize-space()='shopping cart']")
+	WebElement linkToCart;
+	
 	//action
 	
 	public boolean doesImacExist()
@@ -29,6 +36,17 @@ public class ImacProdPage extends BasePage {
 		{
 			return false;
 		}
+	}
+	
+	public void clickAddToCart()
+	{
+		addToCartBtn.click();
+	}
+	
+	
+	public void clickCartLink()
+	{
+		linkToCart.click();
 	}
 	
 	
