@@ -13,13 +13,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC004_SearchProductTest">
+      <class name="testCases.TC005_AddToCartPageTest">
         <methods>
+          <include name="verify_addToCart"/>
           <include name="tearDown"/>
-          <include name="verify_prod_search"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC004_SearchProductTest -->
+      </class> <!-- testCases.TC005_AddToCartPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->
