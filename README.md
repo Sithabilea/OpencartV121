@@ -33,4 +33,4 @@ mvn clean test
 
 ## Test Execution Extent Reports Screenshot
 
-![Extent Report](<Successful test execution.png>)
+![Extent Report](screenshots/Successful_test_execution.png)
