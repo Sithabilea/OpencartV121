@@ -111,7 +111,7 @@ This will start:
 
 
 ```bash
-mvn test -DesuiteXmlFile=grid-docker.xml
+mvn test -DsuiteXmlFile=grid-docker.xml
 ```
 
 Tests will be distributed across the available browser nodes.
